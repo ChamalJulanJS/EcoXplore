@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap');
-
 :root {
-    --bg-dark: #f8fafc; /* Now actually light background */
+    --bg-dark: #f8fafc; 
     --surface: #ffffff;
     --surface-light: #f1f5f9;
-    --primary: #059669; /* Emerald Green */
+    --primary: #059669; 
     --primary-glow: #10b981;
-    --accent: #d97706; /* Earthy Orange */
+    --accent: #d97706; 
     --text-main: #0f172a;
     --text-muted: #475569;
     --transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -14,7 +13,6 @@
     --glass-bg: rgba(255, 255, 255, 0.9);
     --input-bg: #f1f5f9;
 }
-
 body {
     background-color: var(--bg-dark);
     color: var(--text-main);
@@ -22,12 +20,9 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
 }
-
 h1, h2, h3, h4, .serif {
     font-family: 'Playfair Display', serif;
 }
-
-/* Custom Navbar (Light Theme) */
 .modern-nav {
     position: fixed;
     top: 0; width: 100%;
@@ -40,12 +35,10 @@ h1, h2, h3, h4, .serif {
     border-bottom: 1px solid var(--border-color);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
 }
-
 .modern-nav.scrolled {
     padding: 10px 0;
     background: rgba(255, 255, 255, 0.98);
 }
-
 .nav-brand {
     font-size: 1.8rem;
     font-weight: 900;
@@ -53,11 +46,9 @@ h1, h2, h3, h4, .serif {
     text-decoration: none;
     letter-spacing: 1px;
 }
-
 .nav-brand span {
     color: var(--primary-glow);
 }
-
 .modern-nav-links {
     display: flex;
     gap: 30px;
@@ -66,7 +57,6 @@ h1, h2, h3, h4, .serif {
     padding: 0;
     list-style: none;
 }
-
 .modern-nav-links a {
     color: var(--text-main);
     text-decoration: none;
@@ -78,7 +68,6 @@ h1, h2, h3, h4, .serif {
     position: relative;
     padding-bottom: 5px;
 }
-
 .modern-nav-links a::after {
     content: '';
     position: absolute;
@@ -89,15 +78,12 @@ h1, h2, h3, h4, .serif {
     background: var(--primary-glow);
     transition: var(--transition);
 }
-
 .modern-nav-links a:hover::after, .modern-nav-links a.active::after {
     width: 100%;
 }
-
 .modern-nav-links a:hover, .modern-nav-links a.active {
     color: var(--primary-glow);
 }
-
 .nav-auth-login {
     color: var(--text-main);
     text-decoration: none;
@@ -110,8 +96,6 @@ h1, h2, h3, h4, .serif {
 .nav-auth-login:hover {
     color: var(--primary-glow);
 }
-
-/* Hero Section */
 .hero-modern {
     height: 100vh;
     position: relative;
@@ -122,7 +106,6 @@ h1, h2, h3, h4, .serif {
     overflow: hidden;
     padding-top: 80px;
 }
-
 .hero-bg {
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
@@ -132,29 +115,23 @@ h1, h2, h3, h4, .serif {
     transform: scale(1.05);
     animation: zoomOut 20s infinite alternate linear;
 }
-
 @keyframes zoomOut {
     from { transform: scale(1.05); }
     to { transform: scale(1.15); }
 }
-
 .hero-overlay {
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
     background: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.8) 100%);
     z-index: -1;
 }
-
 .hero-content {
     max-width: 900px;
     padding: 0 20px;
 }
-
-/* Force hero text to be white */
 .hero-content .hero-title, .hero-content p, .hero-content .hero-subtitle {
     color: #ffffff;
 }
-
 .hero-subtitle {
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -164,7 +141,6 @@ h1, h2, h3, h4, .serif {
     font-weight: 700;
     display: block;
 }
-
 .hero-title {
     font-size: 6rem;
     line-height: 1.1;
@@ -172,8 +148,6 @@ h1, h2, h3, h4, .serif {
     margin-bottom: 30px;
     text-transform: capitalize;
 }
-
-/* Modern Buttons */
 .btn-modern {
     display: inline-block;
     padding: 16px 40px;
@@ -188,7 +162,6 @@ h1, h2, h3, h4, .serif {
     overflow: hidden;
     z-index: 1;
 }
-
 .btn-primary-modern {
     background: var(--primary);
     color: #fff !important;
@@ -198,7 +171,6 @@ h1, h2, h3, h4, .serif {
     overflow: hidden;
     border-radius: 50px;
 }
-
 .btn-primary-modern::before {
     content: '';
     position: absolute;
@@ -208,30 +180,24 @@ h1, h2, h3, h4, .serif {
     transition: var(--transition);
     opacity: 0;
 }
-
 .btn-primary-modern:hover::before {
     opacity: 1;
 }
-
 .btn-primary-modern:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 35px rgba(16, 185, 129, 0.4);
     color: #fff !important;
 }
-
 .btn-outline-modern {
     background: transparent;
     color: var(--text-main);
     border: 1px solid rgba(0,0,0,0.2);
 }
-
 .btn-outline-modern:hover {
     border-color: var(--text-main);
     background: var(--text-main);
     color: var(--surface) !important;
 }
-
-/* Force outline buttons in hero to be white */
 .hero-content .btn-outline-modern {
     color: #ffffff;
     border-color: rgba(255, 255, 255, 0.4);
@@ -241,30 +207,23 @@ h1, h2, h3, h4, .serif {
     background: #ffffff;
     color: #000000 !important;
 }
-
-/* Sections */
 .section-padding {
     padding: 120px 0;
 }
-
 .section-title {
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 20px;
 }
-
 .section-title span {
     color: var(--primary-glow);
     font-style: italic;
 }
-
 .text-gray {
     color: var(--text-muted);
     font-size: 1.1rem;
     line-height: 1.8;
 }
-
-/* Feature Grid */
 .feature-box {
     padding: 40px;
     background: var(--surface);
@@ -274,20 +233,16 @@ h1, h2, h3, h4, .serif {
     height: 100%;
     box-shadow: 0 10px 30px rgba(0,0,0,0.02);
 }
-
 .feature-box:hover {
     background: var(--surface-light);
     transform: translateY(-10px);
     border-color: rgba(16, 185, 129, 0.3);
     box-shadow: 0 20px 40px rgba(0,0,0,0.05);
 }
-
 .feature-icon {
     font-size: 3rem;
     margin-bottom: 20px;
 }
-
-/* Ultra Modern Tour Cards */
 .tour-card-modern {
     position: relative;
     border-radius: 24px;
@@ -296,14 +251,12 @@ h1, h2, h3, h4, .serif {
     cursor: pointer;
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
-
 .tour-card-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
-
 .tour-card-overlay {
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
@@ -314,11 +267,9 @@ h1, h2, h3, h4, .serif {
     padding: 30px;
     transition: var(--transition);
 }
-
 .tour-card-modern:hover .tour-card-img {
     transform: scale(1.1);
 }
-
 .tour-card-title {
     font-size: 2rem;
     font-weight: 700;
@@ -327,7 +278,6 @@ h1, h2, h3, h4, .serif {
     transition: var(--transition);
     color: #fff;
 }
-
 .tour-card-price {
     font-size: 1.2rem;
     color: var(--primary-glow);
@@ -338,14 +288,11 @@ h1, h2, h3, h4, .serif {
     transition: var(--transition);
     transition-delay: 0.1s;
 }
-
 .tour-card-modern:hover .tour-card-title,
 .tour-card-modern:hover .tour-card-price {
     transform: translateY(0);
     opacity: 1;
 }
-
-/* Scroll Reveal Classes */
 .reveal {
     opacity: 0;
     transform: translateY(50px);
@@ -355,8 +302,6 @@ h1, h2, h3, h4, .serif {
     opacity: 1;
     transform: translateY(0);
 }
-
-/* Footer Ultra Modern */
 .modern-footer {
     background: var(--surface);
     padding: 100px 0 30px;
@@ -364,7 +309,6 @@ h1, h2, h3, h4, .serif {
     position: relative;
     overflow: hidden;
 }
-
 .footer-logo {
     font-size: 2.2rem;
     font-weight: 900;
@@ -372,11 +316,9 @@ h1, h2, h3, h4, .serif {
     text-decoration: none;
     letter-spacing: 1px;
 }
-
 .footer-logo span {
     color: var(--primary-glow);
 }
-
 .modern-footer h4 {
     color: var(--text-main);
     font-weight: 700;
@@ -385,34 +327,28 @@ h1, h2, h3, h4, .serif {
     letter-spacing: 1px;
     text-transform: uppercase;
 }
-
 .modern-footer ul {
     padding: 0;
     list-style: none;
 }
-
 .modern-footer ul li {
     margin-bottom: 12px;
 }
-
 .modern-footer ul li a {
     color: var(--text-muted);
     text-decoration: none;
     transition: var(--transition);
     display: inline-block;
 }
-
 .modern-footer ul li a:hover {
     color: var(--primary-glow);
     transform: translateX(5px);
 }
-
 .social-links {
     display: flex;
     gap: 15px;
     margin-top: 25px;
 }
-
 .social-links a {
     display: flex;
     align-items: center;
@@ -427,14 +363,12 @@ h1, h2, h3, h4, .serif {
     border: 1px solid var(--border-color);
     font-weight: 600;
 }
-
 .social-links a:hover {
     background: var(--primary);
     border-color: var(--primary);
     transform: translateY(-5px);
     color: #fff;
 }
-
 .newsletter-input {
     background: var(--input-bg);
     border: 1px solid var(--border-color);
@@ -450,7 +384,6 @@ h1, h2, h3, h4, .serif {
     outline: none;
     box-shadow: 0 0 15px rgba(16, 185, 129, 0.1);
 }
-
 .footer-bottom {
     margin-top: 70px;
     padding-top: 25px;
@@ -459,8 +392,6 @@ h1, h2, h3, h4, .serif {
     justify-content: space-between;
     align-items: center;
 }
-
-/* Standardizing Pages Hero */
 .page-hero {
     height: 50vh;
     position: relative;
@@ -478,14 +409,10 @@ h1, h2, h3, h4, .serif {
     background-position: center top !important;
     z-index: -2;
 }
-
-/* Ensure secondary pages hero title is also white */
 .page-hero-title {
     font-size: 4rem;
     color: #fff !important;
 }
-
-/* Gallery Grid Modern — Masonry Layout */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -499,7 +426,6 @@ h1, h2, h3, h4, .serif {
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     cursor: pointer;
 }
-/* Spanning variations */
 .gallery-item.item-large {
     grid-column: span 2;
     grid-row: span 2;
@@ -520,7 +446,6 @@ h1, h2, h3, h4, .serif {
     transform: scale(1.08);
     filter: brightness(0.7);
 }
-/* Hover overlay with location name */
 .gallery-item .gallery-caption {
     position: absolute;
     bottom: 0;
@@ -547,7 +472,6 @@ h1, h2, h3, h4, .serif {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-/* Responsive: 2 cols on tablet, 1 col on mobile */
 @media (max-width: 991px) {
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -564,8 +488,6 @@ h1, h2, h3, h4, .serif {
         grid-column: span 1;
     }
 }
-
-/* Form */
 .modern-input {
     background: var(--input-bg);
     border: 1px solid var(--border-color);
@@ -583,8 +505,6 @@ select.modern-input option {
     color: #0f172a; 
     background: #ffffff;
 }
-
-/* Auth Card */
 .auth-card {
     background: var(--surface);
     padding: 50px 40px;
@@ -592,8 +512,6 @@ select.modern-input option {
     box-shadow: 0 20px 60px rgba(0,0,0,0.08);
     border: 1px solid var(--border-color);
 }
-
-/* Ultra Modern Journey Cards */
 .journey-stack-container {
     position: relative;
     padding-bottom: 60px;
@@ -666,7 +584,6 @@ select.modern-input option {
 .journey-stack-number {
     display: none;
 }
-/* Alternate card: image on right for odd, image focus left for even */
 .journey-stack-card:nth-child(even) .journey-stack-overlay {
     background: linear-gradient(270deg, rgba(5,7,6,0.92) 0%, rgba(5,7,6,0.6) 50%, rgba(5,7,6,0.1) 100%);
 }
@@ -702,10 +619,6 @@ select.modern-input option {
     margin-bottom: 30px;
     font-size: 0.9rem;
 }
-
-/* ============================================
-   MOBILE HAMBURGER MENU
-   ============================================ */
 .mobile-menu-toggle {
     display: none;
     flex-direction: column;
@@ -727,7 +640,6 @@ select.modern-input option {
     border-radius: 2px;
     transition: var(--transition);
 }
-/* Animate hamburger to X */
 .mobile-menu-toggle.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }
@@ -737,8 +649,6 @@ select.modern-input option {
 .mobile-menu-toggle.active span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
 }
-
-/* Mobile slide-in menu */
 .mobile-nav-overlay {
     display: none;
     position: fixed;
@@ -754,7 +664,6 @@ select.modern-input option {
 .mobile-nav-overlay.active {
     opacity: 1;
 }
-
 .mobile-nav-menu {
     display: none;
     position: fixed;
@@ -823,12 +732,6 @@ select.modern-input option {
     background: var(--primary);
     color: #fff;
 }
-
-/* ============================================
-   RESPONSIVE BREAKPOINTS
-   ============================================ */
-
-/* Tablet & below: show hamburger */
 @media (max-width: 767px) {
     .mobile-menu-toggle {
         display: flex;
@@ -838,8 +741,6 @@ select.modern-input option {
         display: block;
     }
 }
-
-/* ---- TABLET (max-width: 991px) ---- */
 @media (max-width: 991px) {
     .hero-title {
         font-size: 3.5rem;
@@ -864,10 +765,7 @@ select.modern-input option {
         padding: 60px 0 30px;
     }
 }
-
-/* ---- MOBILE (max-width: 767px) ---- */
 @media (max-width: 767px) {
-    /* Hero */
     .hero-modern {
         padding-top: 70px;
     }
@@ -883,7 +781,6 @@ select.modern-input option {
     .hero-content {
         padding: 0 16px;
     }
-    /* Buttons in hero: stack vertically */
     .hero-content .mt-5 {
         display: flex;
         flex-direction: column;
@@ -899,8 +796,6 @@ select.modern-input option {
         font-size: 0.85rem;
         letter-spacing: 1.5px;
     }
-
-    /* Page Hero */
     .page-hero {
         height: 40vh;
         padding-top: 70px;
@@ -909,8 +804,6 @@ select.modern-input option {
     .page-hero-title {
         font-size: 2.2rem;
     }
-
-    /* Section typography */
     .section-title {
         font-size: 2rem;
     }
@@ -920,18 +813,12 @@ select.modern-input option {
     .text-gray {
         font-size: 1rem;
     }
-
-    /* Feature boxes */
     .feature-box {
         padding: 28px;
     }
-
-    /* Tour cards on home page */
     .tour-card-title {
         font-size: 1.5rem;
     }
-
-    /* Journey stack cards */
     .journey-stack-card {
         min-height: 400px;
     }
@@ -964,8 +851,6 @@ select.modern-input option {
     .journey-stack-card:nth-child(even) .journey-stack-content {
         margin-left: 0;
     }
-
-    /* Gallery: show captions always on touch devices */
     .gallery-item .gallery-caption {
         transform: translateY(0);
     }
@@ -975,13 +860,9 @@ select.modern-input option {
     .gallery-caption span {
         font-size: 0.75rem;
     }
-
-    /* Auth card */
     .auth-card {
         padding: 30px 20px;
     }
-
-    /* Footer */
     .modern-footer {
         padding: 50px 0 24px;
     }
@@ -995,8 +876,6 @@ select.modern-input option {
     .social-links {
         justify-content: center;
     }
-
-    /* Navbar */
     .modern-nav {
         padding: 12px 0;
     }
@@ -1004,8 +883,6 @@ select.modern-input option {
         font-size: 1.5rem;
     }
 }
-
-/* ---- SMALL MOBILE (max-width: 400px) ---- */
 @media (max-width: 400px) {
     .hero-title {
         font-size: 2rem;

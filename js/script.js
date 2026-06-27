@@ -1,22 +1,16 @@
-// Scroll reveal and modern interactions
 document.addEventListener("DOMContentLoaded", function() {
-    
-    // Navbar scroll effect
     const navbar = document.querySelector('.modern-nav');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
         } else {
-            navbar.classList.add('scrolled'); // Force scrolled background slightly or remove
+            navbar.classList.add('scrolled'); 
             if(window.scrollY === 0) navbar.classList.remove('scrolled');
         }
     });
-
-    // Mobile hamburger menu
     const menuToggle = document.querySelector('.mobile-menu-toggle');
     const mobileMenu = document.querySelector('.mobile-nav-menu');
     const mobileOverlay = document.querySelector('.mobile-nav-overlay');
-
     if (menuToggle && mobileMenu && mobileOverlay) {
         menuToggle.addEventListener('click', () => {
             menuToggle.classList.toggle('active');
@@ -24,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function() {
             mobileOverlay.classList.toggle('active');
             document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
         });
-
         mobileOverlay.addEventListener('click', () => {
             menuToggle.classList.remove('active');
             mobileMenu.classList.remove('active');
@@ -32,14 +25,11 @@ document.addEventListener("DOMContentLoaded", function() {
             document.body.style.overflow = '';
         });
     }
-
-    // Intersection Observer for scroll reveal animations
     const revealElements = document.querySelectorAll('.reveal');
     const revealOptions = {
         threshold: 0.15,
         rootMargin: "0px 0px -50px 0px"
     };
-
     const revealOnScroll = new IntersectionObserver(function(entries, observer) {
         entries.forEach(entry => {
             if (!entry.isIntersecting) {
@@ -49,18 +39,14 @@ document.addEventListener("DOMContentLoaded", function() {
             observer.unobserve(entry.target);
         });
     }, revealOptions);
-
     revealElements.forEach(el => {
         revealOnScroll.observe(el);
     });
-
-    // Form Validation (Booking/Enquiry Form)
     const bookingForm = document.getElementById("bookingForm");
     if (bookingForm) {
         bookingForm.addEventListener("submit", function(event) {
             event.preventDefault();
             let isValid = true;
-            
             const inputs = bookingForm.querySelectorAll("[required]");
             inputs.forEach(input => {
                 if (!input.value.trim()) {
@@ -71,7 +57,6 @@ document.addEventListener("DOMContentLoaded", function() {
                     input.classList.add("is-valid");
                 }
             });
-
             if (isValid) {
                 const formMessage = document.getElementById("formMessage");
                 formMessage.innerHTML = `<div class="alert alert-success bg-transparent border-success text-success" role="alert">
@@ -81,8 +66,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 inputs.forEach(i => i.classList.remove("is-valid"));
             }
         });
-
-        // Real-time validation removal on input
         bookingForm.querySelectorAll("input, select, textarea").forEach(input => {
             input.addEventListener("input", function() {
                 this.classList.remove("is-invalid");

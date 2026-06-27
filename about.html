@@ -1,151 +1,1 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoXplore | Our Ethos</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-    <nav class="modern-nav">
-        <div class="container d-flex justify-content-between align-items-center">
-            <a href="index.html" class="nav-brand">EcoXplore<span>.</span></a>
-            <ul class="modern-nav-links d-none d-md-flex">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="tours.html">Journeys</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="booking.html">Book</a></li>
-            </ul>
-            <div class="nav-auth d-none d-lg-flex align-items-center gap-4">
-                <a href="login.html" class="nav-auth-login">Log In</a>
-                <a href="signup.html" class="btn-modern btn-primary-modern text-white" style="padding: 10px 24px; font-size: 0.85rem;">Sign Up</a>
-            </div>
-            <button class="mobile-menu-toggle" aria-label="Menu">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-    </nav>
-    <div class="mobile-nav-overlay"></div>
-    <div class="mobile-nav-menu">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" class="active">About</a></li>
-            <li><a href="tours.html">Journeys</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="booking.html">Book</a></li>
-        </ul>
-        <div class="mobile-auth">
-            <a href="login.html" class="mobile-login">Log In</a>
-            <a href="signup.html" class="mobile-signup">Sign Up</a>
-        </div>
-    </div>
-
-    <!-- Page Hero -->
-    <header class="page-hero">
-        <div class="page-hero-bg" style="background: linear-gradient(180deg, rgba(5,7,6,0.6) 0%, rgba(5,7,6,0.9) 100%), url('images/about_hero.png');"></div>
-        <div class="hero-content reveal active">
-            <h1 class="hero-title page-hero-title">Our <span style="font-style: italic; color: var(--primary-glow);">Ethos</span></h1>
-            <p class="text-gray mx-auto" style="max-width: 600px;">Pioneering the intersection of ultra-luxury travel and radical ecological conservation in Sri Lanka.</p>
-        </div>
-    </header>
-
-    <section class="section-padding pt-0">
-        <div class="container">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-5 reveal">
-                    <img src="images/about_hero.png" alt="Tea Estates" class="img-fluid rounded" style="border-radius: 20px !important; border: 1px solid rgba(255,255,255,0.05);">
-                </div>
-                <div class="col-lg-7 reveal" style="transition-delay: 0.2s;">
-                    <h2 class="section-title h1 mb-4">Born from the <br><span class="serif">Wilderness.</span></h2>
-                    <p class="text-gray mb-4">EcoXplore was forged by a collective of Sri Lankan environmentalists who saw the devastating impact of mass tourism. We set out to create an alternative: experiences that are breathtakingly beautiful, exceptionally luxurious, and entirely restorative to the ecosystems they inhabit.</p>
-                    <p class="text-gray">Every journey booked with us directly funds reforestation in the Sinharaja rainforest and supports marginalized indigenous communities across the central highlands.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- The Experts -->
-    <section class="section-padding bg-darker" style="background: var(--surface);">
-        <div class="container">
-            <div class="text-center mb-5 reveal">
-                <h2 class="section-title">The <span class="serif">Guardians</span></h2>
-                <p class="text-gray">Meet the native experts leading your expeditions.</p>
-            </div>
-            
-            <div class="row g-5">
-                <div class="col-md-4 reveal text-center" style="transition-delay: 0.1s;">
-                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&h=300&q=80" alt="Guide" class="rounded-circle mb-4" style="width: 150px; height: 150px; object-fit: cover; border: 2px solid var(--primary-glow);">
-                    <h3 class="serif text-white">Kasun Perera</h3>
-                    <p class="text-gray small">Highland Navigator</p>
-                </div>
-                <div class="col-md-4 reveal text-center" style="transition-delay: 0.2s;">
-                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&h=300&q=80" alt="Guide" class="rounded-circle mb-4" style="width: 150px; height: 150px; object-fit: cover; border: 2px solid var(--primary-glow);">
-                    <h3 class="serif text-white">Sanduni Silva</h3>
-                    <p class="text-gray small">Marine Ecologist</p>
-                </div>
-                <div class="col-md-4 reveal text-center" style="transition-delay: 0.3s;">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&h=300&q=80" alt="Guide" class="rounded-circle mb-4" style="width: 150px; height: 150px; object-fit: cover; border: 2px solid var(--primary-glow);">
-                    <h3 class="serif text-white">Nuwan Bandara</h3>
-                    <p class="text-gray small">Leopard Tracker</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="modern-footer">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-4 col-md-6">
-                    <a href="index.html" class="footer-logo mb-4 d-block">EcoXplore<span>.</span></a>
-                    <p class="text-gray pe-lg-4 mb-4">Redefining luxury eco-tourism in Sri Lanka. Experience the wilderness responsibly and preserve it endlessly.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#"><i class="bi bi-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-3 col-6">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="about.html">Our Ethos</a></li>
-                        <li><a href="tours.html">Journeys</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="booking.html">Book Now</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-2 col-md-3 col-6">
-                    <h4>Support</h4>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 col-md-12">
-                    <h4>Newsletter</h4>
-                    <p class="text-gray mb-4">Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>
-                    <div class="position-relative">
-                        <input type="email" class="newsletter-input" placeholder="Enter your email">
-                        <button class="btn-primary-modern position-absolute top-0 end-0 rounded-pill h-100 px-4 fw-bold" style="border: none;">Subscribe</button>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom flex-column flex-md-row">
-                <p class="text-gray small mb-0">&copy; 2026 EcoXplore Adventures. All rights reserved.</p>
-                <div class="text-gray small mt-3 mt-md-0">
-                    Crafted for the wild.
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/script.js"></script>
-</body>
-</html>
+<!DOCTYPE html><html lang="en"><head>    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>EcoXplore | Our Ethos</title>    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">    <link rel="stylesheet" href="css/style.css"></head><body>    <nav class="modern-nav">        <div class="container d-flex justify-content-between align-items-center">            <a href="index.html" class="nav-brand">EcoXplore<span>.</span></a>            <ul class="modern-nav-links d-none d-md-flex">                <li><a href="index.html">Home</a></li>                <li><a href="about.html" class="active">About</a></li>                <li><a href="tours.html">Journeys</a></li>                <li><a href="gallery.html">Gallery</a></li>                <li><a href="booking.html">Book</a></li>            </ul>            <div class="nav-auth d-none d-lg-flex align-items-center gap-4">                <a href="login.html" class="nav-auth-login">Log In</a>                <a href="signup.html" class="btn-modern btn-primary-modern text-white" style="padding: 10px 24px; font-size: 0.85rem;">Sign Up</a>            </div>            <button class="mobile-menu-toggle" aria-label="Menu">                <span></span><span></span><span></span>            </button>        </div>    </nav>    <div class="mobile-nav-overlay"></div>    <div class="mobile-nav-menu">        <ul>            <li><a href="index.html">Home</a></li>            <li><a href="about.html" class="active">About</a></li>            <li><a href="tours.html">Journeys</a></li>            <li><a href="gallery.html">Gallery</a></li>            <li><a href="booking.html">Book</a></li>        </ul>        <div class="mobile-auth">            <a href="login.html" class="mobile-login">Log In</a>            <a href="signup.html" class="mobile-signup">Sign Up</a>        </div>    </div>    <header class="page-hero">        <div class="page-hero-bg" style="background: linear-gradient(180deg, rgba(5,7,6,0.6) 0%, rgba(5,7,6,0.9) 100%), url('images/about_hero.png');"></div>        <div class="hero-content reveal active">            <h1 class="hero-title page-hero-title">Our <span style="font-style: italic; color: var(--primary-glow);">Ethos</span></h1>            <p class="text-gray mx-auto" style="max-width: 600px;">Pioneering the intersection of ultra-luxury travel and radical ecological conservation in Sri Lanka.</p>        </div>    </header>    <section class="section-padding pt-0">        <div class="container">            <div class="row align-items-center g-5">                <div class="col-lg-5 reveal">                    <img src="images/about_hero.png" alt="Tea Estates" class="img-fluid rounded" style="border-radius: 20px !important; border: 1px solid rgba(255,255,255,0.05);">                </div>                <div class="col-lg-7 reveal" style="transition-delay: 0.2s;">                    <h2 class="section-title h1 mb-4">Born from the <br><span class="serif">Wilderness.</span></h2>                    <p class="text-gray mb-4">EcoXplore was forged by a collective of Sri Lankan environmentalists who saw the devastating impact of mass tourism. We set out to create an alternative: experiences that are breathtakingly beautiful, exceptionally luxurious, and entirely restorative to the ecosystems they inhabit.</p>                    <p class="text-gray">Every journey booked with us directly funds reforestation in the Sinharaja rainforest and supports marginalized indigenous communities across the central highlands.</p>                </div>            </div>        </div>    </section>    <section class="section-padding bg-darker" style="background: var(--surface);">        <div class="container">            <div class="text-center mb-5 reveal">                <h2 class="section-title">The <span class="serif">Guardians</span></h2>                <p class="text-gray">Meet the native experts leading your expeditions.</p>            </div>            <div class="row g-5">                <div class="col-md-4 reveal text-center" style="transition-delay: 0.1s;">                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&h=300&q=80" alt="Guide" class="rounded-circle mb-4" style="width: 150px; height: 150px; object-fit: cover; border: 2px solid var(--primary-glow);">                    <h3 class="serif text-white">Kasun Perera</h3>                    <p class="text-gray small">Highland Navigator</p>                </div>                <div class="col-md-4 reveal text-center" style="transition-delay: 0.2s;">                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&h=300&q=80" alt="Guide" class="rounded-circle mb-4" style="width: 150px; height: 150px; object-fit: cover; border: 2px solid var(--primary-glow);">                    <h3 class="serif text-white">Sanduni Silva</h3>                    <p class="text-gray small">Marine Ecologist</p>                </div>                <div class="col-md-4 reveal text-center" style="transition-delay: 0.3s;">                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&h=300&q=80" alt="Guide" class="rounded-circle mb-4" style="width: 150px; height: 150px; object-fit: cover; border: 2px solid var(--primary-glow);">                    <h3 class="serif text-white">Nuwan Bandara</h3>                    <p class="text-gray small">Leopard Tracker</p>                </div>            </div>        </div>    </section>    <footer class="modern-footer">        <div class="container">            <div class="row g-5">                <div class="col-lg-4 col-md-6">                    <a href="index.html" class="footer-logo mb-4 d-block">EcoXplore<span>.</span></a>                    <p class="text-gray pe-lg-4 mb-4">Redefining luxury eco-tourism in Sri Lanka. Experience the wilderness responsibly and preserve it endlessly.</p>                    <div class="social-links">                        <a href="#"><i class="bi bi-facebook"></i></a>                        <a href="#"><i class="bi bi-instagram"></i></a>                        <a href="#"><i class="bi bi-twitter-x"></i></a>                        <a href="#"><i class="bi bi-youtube"></i></a>                    </div>                </div>                <div class="col-lg-2 col-md-3 col-6">                    <h4>Company</h4>                    <ul>                        <li><a href="about.html">Our Ethos</a></li>                        <li><a href="tours.html">Journeys</a></li>                        <li><a href="gallery.html">Gallery</a></li>                        <li><a href="booking.html">Book Now</a></li>                    </ul>                </div>                <div class="col-lg-2 col-md-3 col-6">                    <h4>Support</h4>                    <ul>                        <li><a href="#">FAQ</a></li>                        <li><a href="#">Contact Us</a></li>                        <li><a href="#">Privacy Policy</a></li>                        <li><a href="#">Terms of Service</a></li>                    </ul>                </div>                <div class="col-lg-4 col-md-12">                    <h4>Newsletter</h4>                    <p class="text-gray mb-4">Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>                    <div class="position-relative">                        <input type="email" class="newsletter-input" placeholder="Enter your email">                        <button class="btn-primary-modern position-absolute top-0 end-0 rounded-pill h-100 px-4 fw-bold" style="border: none;">Subscribe</button>                    </div>                </div>            </div>            <div class="footer-bottom flex-column flex-md-row">                <p class="text-gray small mb-0">&copy; 2026 EcoXplore Adventures. All rights reserved.</p>                <div class="text-gray small mt-3 mt-md-0">                    Crafted for the wild.                </div>            </div>        </div>    </footer>    <script src="js/script.js"></script></body></html>
