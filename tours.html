@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoXplore | Journeys</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Modern Navbar -->
+    <nav class="modern-nav">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="index.html" class="nav-brand">EcoXplore<span>.</span></a>
+            <ul class="modern-nav-links d-none d-md-flex">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="tours.html" class="active">Journeys</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="booking.html">Book</a></li>
+            </ul>
+            <div class="nav-auth d-none d-lg-flex align-items-center gap-4">
+                <a href="login.html" class="nav-auth-login">Log In</a>
+                <a href="signup.html" class="btn-modern btn-primary-modern text-white" style="padding: 10px 24px; font-size: 0.85rem;">Sign Up</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+    <div class="mobile-nav-overlay"></div>
+    <div class="mobile-nav-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tours.html" class="active">Journeys</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="booking.html">Book</a></li>
+        </ul>
+        <div class="mobile-auth">
+            <a href="login.html" class="mobile-login">Log In</a>
+            <a href="signup.html" class="mobile-signup">Sign Up</a>
+        </div>
+    </div>
+
+    <!-- Page Hero -->
+    <header class="page-hero">
+        <div class="page-hero-bg" style="background: linear-gradient(180deg, rgba(5,7,6,0.6) 0%, rgba(5,7,6,0.9) 100%), url('images/tours_hero.png');"></div>
+        <div class="hero-content reveal active">
+            <h1 class="hero-title page-hero-title">Curated <span style="font-style: italic; color: var(--primary-glow);">Journeys</span></h1>
+            <p class="text-white mx-auto" style="font-size: 1.2rem; opacity: 0.9;">Immersive expeditions designed for the modern explorer.</p>
+        </div>
+    </header>
+
+    <!-- Ultra Modern Stack Layout -->
+    <section class="pt-5" style="background: var(--bg-dark);">
+        <div class="container journey-stack-container">
+            
+            <!-- Journey 01 -->
+            <div class="journey-stack-card reveal">
+                <img src="images/ella.png" class="journey-stack-bg" alt="Ella">
+                <div class="journey-stack-overlay"></div>
+                <div class="journey-stack-number d-none d-md-block">01</div>
+                <div class="journey-stack-content">
+                    <div class="journey-stack-meta text-white">THE HIGHLANDS</div>
+                    <h2>Ella <span class="serif">Express</span></h2>
+                    <p class="mb-4" style="color: rgba(255,255,255,0.8); font-size: 1.2rem; line-height: 1.8;">
+                        Traverse the misty peaks of Ella. Walk the iconic Nine Arch Bridge and hike through private, organic tea estates. Includes a stay at our zero-emission cliffside lodge.
+                    </p>
+                    <div class="d-flex align-items-center gap-4 mb-5">
+                        <div class="text-white">
+                            <span class="d-block small text-uppercase" style="color: var(--primary-glow); letter-spacing: 2px;">Duration</span>
+                            <strong>2 Days, 1 Night</strong>
+                        </div>
+                        <div style="width: 1px; height: 40px; background: rgba(255,255,255,0.2);"></div>
+                        <div class="text-white">
+                            <span class="d-block small text-uppercase" style="color: var(--primary-glow); letter-spacing: 2px;">Starting</span>
+                            <strong>$120 / LKR 36,000</strong>
+                        </div>
+                    </div>
+                    <a href="booking.html?tour=ella" class="btn-modern btn-primary-modern text-white">Reserve Journey</a>
+                </div>
+            </div>
+
+            <!-- Journey 02 -->
+            <div class="journey-stack-card reveal">
+                <img src="images/sinharaja.png" class="journey-stack-bg" alt="Sinharaja">
+                <div class="journey-stack-overlay"></div>
+                <div class="journey-stack-number d-none d-md-block">02</div>
+                <div class="journey-stack-content">
+                    <div class="journey-stack-meta text-white">RAINFOREST</div>
+                    <h2>Sinharaja <span class="serif">Canopy</span></h2>
+                    <p class="mb-4" style="color: rgba(255,255,255,0.8); font-size: 1.2rem; line-height: 1.8;">
+                        Venture deep into the Sinharaja rainforest. Bathe in hidden waterfalls and engage in active conservation by planting a native hardwood tree with our biologists.
+                    </p>
+                    <div class="d-flex align-items-center gap-4 mb-5">
+                        <div class="text-white">
+                            <span class="d-block small text-uppercase" style="color: var(--primary-glow); letter-spacing: 2px;">Duration</span>
+                            <strong>Full Day (8 Hours)</strong>
+                        </div>
+                        <div style="width: 1px; height: 40px; background: rgba(255,255,255,0.2);"></div>
+                        <div class="text-white">
+                            <span class="d-block small text-uppercase" style="color: var(--primary-glow); letter-spacing: 2px;">Starting</span>
+                            <strong>$65 / LKR 19,500</strong>
+                        </div>
+                    </div>
+                    <a href="booking.html?tour=sinharaja" class="btn-modern btn-primary-modern text-white">Reserve Journey</a>
+                </div>
+            </div>
+
+            <!-- Journey 03 -->
+            <div class="journey-stack-card reveal">
+                <img src="images/yala.png" class="journey-stack-bg" alt="Yala">
+                <div class="journey-stack-overlay"></div>
+                <div class="journey-stack-number d-none d-md-block">03</div>
+                <div class="journey-stack-content">
+                    <div class="journey-stack-meta text-white">WILDLIFE</div>
+                    <h2>Yala <span class="serif">Nocturnal</span></h2>
+                    <p class="mb-4" style="color: rgba(255,255,255,0.8); font-size: 1.2rem; line-height: 1.8;">
+                        An unparalleled safari experience. Track the Sri Lankan Leopard at dawn, and sleep under the stars in our award-winning solar-powered glamping pods.
+                    </p>
+                    <div class="d-flex align-items-center gap-4 mb-5">
+                        <div class="text-white">
+                            <span class="d-block small text-uppercase" style="color: var(--primary-glow); letter-spacing: 2px;">Duration</span>
+                            <strong>3 Days, 2 Nights</strong>
+                        </div>
+                        <div style="width: 1px; height: 40px; background: rgba(255,255,255,0.2);"></div>
+                        <div class="text-white">
+                            <span class="d-block small text-uppercase" style="color: var(--primary-glow); letter-spacing: 2px;">Starting</span>
+                            <strong>$250 / LKR 75,000</strong>
+                        </div>
+                    </div>
+                    <a href="booking.html?tour=yala" class="btn-modern btn-primary-modern text-white">Reserve Journey</a>
+                </div>
+            </div>
+
+            <!-- Journey 04 -->
+            <div class="journey-stack-card reveal">
+                <img src="images/mirissa.png" class="journey-stack-bg" alt="Mirissa">
+                <div class="journey-stack-overlay"></div>
+                <div class="journey-stack-number d-none d-md-block">04</div>
+                <div class="journey-stack-content">
+                    <div class="journey-stack-meta text-white">MARINE</div>
+                    <h2>Mirissa <span class="serif">Blue</span></h2>
+                    <p class="mb-4" style="color: rgba(255,255,255,0.8); font-size: 1.2rem; line-height: 1.8;">
+                        Witness the majestic Blue Whales in the deep Indian Ocean. An eco-friendly ethical whale watching tour guided by certified marine biologists aboard a luxury catamaran.
+                    </p>
+                    <div class="d-flex align-items-center gap-4 mb-5">
+                        <div class="text-white">
+                            <span class="d-block small text-uppercase" style="color: var(--primary-glow); letter-spacing: 2px;">Duration</span>
+                            <strong>Full Day Expedition</strong>
+                        </div>
+                        <div style="width: 1px; height: 40px; background: rgba(255,255,255,0.2);"></div>
+                        <div class="text-white">
+                            <span class="d-block small text-uppercase" style="color: var(--primary-glow); letter-spacing: 2px;">Starting</span>
+                            <strong>$180 / LKR 54,000</strong>
+                        </div>
+                    </div>
+                    <a href="booking.html?tour=mirissa" class="btn-modern btn-primary-modern text-white">Reserve Journey</a>
+                </div>
+            </div>
+
+            <!-- Journey 05 -->
+            <div class="journey-stack-card reveal">
+                <img src="images/anuradhapura.png" class="journey-stack-bg" alt="Anuradhapura">
+                <div class="journey-stack-overlay"></div>
+                <div class="journey-stack-number d-none d-md-block">05</div>
+                <div class="journey-stack-content">
+                    <div class="journey-stack-meta text-white">HERITAGE</div>
+                    <h2>Ancient <span class="serif">Ruins</span></h2>
+                    <p class="mb-4" style="color: rgba(255,255,255,0.8); font-size: 1.2rem; line-height: 1.8;">
+                        Step back in time to the ancient ruins of Sri Lanka's first capital. Cycle through the sacred city and witness the majestic Ruwanwelisaya stupa at sunset.
+                    </p>
+                    <div class="d-flex align-items-center gap-4 mb-5">
+                        <div class="text-white">
+                            <span class="d-block small text-uppercase" style="color: var(--primary-glow); letter-spacing: 2px;">Duration</span>
+                            <strong>2 Days, 1 Night</strong>
+                        </div>
+                        <div style="width: 1px; height: 40px; background: rgba(255,255,255,0.2);"></div>
+                        <div class="text-white">
+                            <span class="d-block small text-uppercase" style="color: var(--primary-glow); letter-spacing: 2px;">Starting</span>
+                            <strong>$95 / LKR 28,500</strong>
+                        </div>
+                    </div>
+                    <a href="booking.html?tour=anuradhapura" class="btn-modern btn-primary-modern text-white">Reserve Journey</a>
+                </div>
+            </div>
+
+            <!-- Journey 06 -->
+            <div class="journey-stack-card reveal">
+                <img src="images/galle.png" class="journey-stack-bg" alt="Galle Fort">
+                <div class="journey-stack-overlay"></div>
+                <div class="journey-stack-number d-none d-md-block">06</div>
+                <div class="journey-stack-content">
+                    <div class="journey-stack-meta text-white">COLONIAL</div>
+                    <h2>Galle Fort <span class="serif">Walk</span></h2>
+                    <p class="mb-4" style="color: rgba(255,255,255,0.8); font-size: 1.2rem; line-height: 1.8;">
+                        Explore the colonial charm of the 17th-century Galle Fort. A guided walking tour through narrow cobblestone streets, boutique shops, and the iconic lighthouse.
+                    </p>
+                    <div class="d-flex align-items-center gap-4 mb-5">
+                        <div class="text-white">
+                            <span class="d-block small text-uppercase" style="color: var(--primary-glow); letter-spacing: 2px;">Duration</span>
+                            <strong>Half-Day Walk</strong>
+                        </div>
+                        <div style="width: 1px; height: 40px; background: rgba(255,255,255,0.2);"></div>
+                        <div class="text-white">
+                            <span class="d-block small text-uppercase" style="color: var(--primary-glow); letter-spacing: 2px;">Starting</span>
+                            <strong>$45 / LKR 13,500</strong>
+                        </div>
+                    </div>
+                    <a href="booking.html?tour=galle" class="btn-modern btn-primary-modern text-white">Reserve Journey</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="modern-footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <a href="index.html" class="footer-logo mb-4 d-block">EcoXplore<span>.</span></a>
+                    <p class="text-gray pe-lg-4 mb-4">Redefining luxury eco-tourism in Sri Lanka. Experience the wilderness responsibly and preserve it endlessly.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">Our Ethos</a></li>
+                        <li><a href="tours.html">Journeys</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="booking.html">Book Now</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <h4>Newsletter</h4>
+                    <p class="text-gray mb-4">Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>
+                    <div class="position-relative">
+                        <input type="email" class="newsletter-input" placeholder="Enter your email">
+                        <button class="btn-primary-modern position-absolute top-0 end-0 rounded-pill h-100 px-4 fw-bold" style="border: none;">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom flex-column flex-md-row">
+                <p class="text-gray small mb-0">&copy; 2026 EcoXplore Adventures. All rights reserved.</p>
+                <div class="text-gray small mt-3 mt-md-0">Crafted for the wild.</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
